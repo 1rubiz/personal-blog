@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel Art Maker!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="boddy">
+    <h1>Pixel Art Maker</h1>
+
+    <h2>Choose Grid Size</h2>
+    <form id="sizePicker">
+        Grid Height:
+        <input type="number" id="inputHeight" name="height" min="1" value="1">
+        Grid Width:
+        <input type="number" id="inputWidth" name="width" min="1" value="1">
+        <input type="submit" id="submission">
+    </form>
+
+    <h2>Pick A Color</h2>
+    <input type="color" id="colorPicker">
+    <h2>Design Canvas</h2>
+    <div id="myDiv">
+        <div id="paragraf">
+        <h3>How to use</h3>
+        <p>- Select desired heigth and width.<br>
+           -Click on "summit" to create the grid. <br>
+           -Pick a color and click on desired cell to apply. <br>
+           -Click on "Summit" again to refresh grid. <br> 
+           -Click on the "Refresh" to refresh page. 
+        </p>
+        </div>
+    </div>
+    <table id="pixelCanvas"></table>
+    <p id="cellSelected"></p>
+    <p id="colorSelected"></p>
+
+    <script src="designs.js"></script>
+</body>
+</html>
